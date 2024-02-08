@@ -1,7 +1,12 @@
+using Portafolio.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Inyeccion de dependencias
+builder.Services.AddTransient<IProyectoRepository, ProyectoRepository>();
+builder.Services.AddTransient<ISendgridMailService, SendgridMailService>();
 
 var app = builder.Build();
 
