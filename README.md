@@ -30,6 +30,7 @@ Y procedemos a ejecutar la instalación.
 
 Este proyecto cuenta adicionalmente con envio de correos por Sendgrid, para ello debe crear una cuenta y una API Key, actualmente Sendgrid solo aprueba en el envio de correos por medio de dominios comprobados, si en el archivo **appsetings.json** deja los campos de configuración de Sendgrid vacios, se omitirá el envio de correos desde el formulario de contacto:
 
+```json
 {
   "SENDGRID_API_KEY": "HERE SENDGRID APY KEY",
   "SENDGRID_EMAIL_FROM": "HERE FROM EMAIL",
@@ -42,3 +43,6 @@ Este proyecto cuenta adicionalmente con envio de correos por Sendgrid, para ello
   },
   "AllowedHosts": "*"
 }
+```
+
+**Happy Coding!!**
